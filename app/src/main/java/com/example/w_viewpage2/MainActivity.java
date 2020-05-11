@@ -99,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
     //設定現在的item //照片是0,1,2,3 所以按下按鈕直接到第三張圖片
     public void setCurrentItem(View view) {
         if (i < 3 && !isRright) {
+            Log.v("hank","位置:" +viewPager2.getCurrentItem());
             i++;
             viewPager2.setCurrentItem(i);
             if (i == 3) {
